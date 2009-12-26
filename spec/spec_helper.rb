@@ -7,6 +7,12 @@ require 'spec/rails'
 
 # Uncomment the next line to use webrat's matchers
 #require 'webrat/integrations/rspec-rails'
+I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 = 1
+require "webrat"
+
+Webrat.configure do |config|
+  config.mode = :rails
+end
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
